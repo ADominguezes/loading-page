@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>loading-page demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script>
+    window.Polymer = {
+      dom: 'shadow',
+      lazyRegister: 'true',
+      useNativeCSSProperties: 'true'
+    }
+  </script>
+
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../../adom-demo/adom-demo.html">
+  <link rel="import" href="../loading-page.html">
+
+  <style is="custom-style" include="demo-pages-shared-styles">
+    /*Common styles*/
+
+    demo-snippet {
+      --demo-snippet-demo: {
+        display: block;
+      };
+    }
+  </style>
+</head>
+
+<body>
+  <adom-demo id="demo" option-selected="0">
+    <demo-snippet id="view0" data-heading="Basic">
+      <template is="dom-bind">
+        <loading-page></loading-page>
+      </template>
+    </demo-snippet>
+    <demo-snippet id="view1" data-heading="Paused">
+      <template is="dom-bind">
+        <loading-page paused></loading-page>
+      </template>
+    </demo-snippet>
+  </adom-demo>
+</body>
+
+</html>

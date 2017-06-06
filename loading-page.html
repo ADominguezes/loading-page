@@ -1,0 +1,45 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="loading-page-styles.html">
+
+<!--
+`loading-page`
+this component shows a loading while a page is loading.
+
+__Example__
+
+```html
+<loading-page></loading-page>
+```
+
+__Example paused__
+
+```html
+<loading-page paused></loading-page>
+```
+
+## Styling
+The following custom properties and mixins are available for styling:
+
+Custom property                    | Description                 | Default   |
+-----------------------------------|-----------------------------|-----------|
+--loading-page-bg-color            | background color for host   | #e5e5e5   |
+--loading-page                     | empty mixin for host        | {}        |
+--loading-page-loading             | empty mixin for loading     | {}        |
+--loading-page-loader-border       | border for loader           | #f3f3f3   |
+--loading-page-loader-border-top   | border top for loader       | #212121   |
+--loading-page-loading-loader      | empty mixin for loader      | {}        |
+--loading-page-loading-paused      | empty mixin for paused      | {}        |
+
+@demo demo/index.html
+-->
+
+<dom-module id="loading-page">
+  <style include="loading-page-styles loading-page-shared-styles"></style>
+  <template>
+    <div class="loading">
+      <div id="loader" class="loading__loader">
+      </div>
+    </div>
+  </template>
+  <script src="loading-page.js"></script>
+</dom-module>

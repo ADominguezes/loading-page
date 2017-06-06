@@ -1,0 +1,20 @@
+{
+  "name": "loading-page",
+  "version": "0.1.0",
+  "description": "this component shows a loading while a page is loading.",
+  "main": "loading-page.html",
+  "keywords": [
+    "loading",
+    "loader"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.8.0"
+  },
+  "devDependencies": {
+    "adom-demo": "https://github.com/ADominguezes/adom-demo.git#^1.0.1",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
